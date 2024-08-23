@@ -21,7 +21,7 @@ body{
     width: 390px;
     margin: 40px auto;
     height: 90vh;
-    background-color: aquamarine;
+    background-color: var(--verde__whatsap);
     border-radius: 20px;
     /* padding: 20px; */
     flex-direction:column;
@@ -150,14 +150,14 @@ body{
     background-color: var(--verde__whatsap);
     width: 50px;
     height: 50px;
+    font-size: 22px;
     border-radius: 50%;
     position: absolute;
     align-items: center;
-    padding-left:15px ;
-    bottom: 30px;
+    justify-content: center;
+    bottom: 50px;
     right: 830px;
 }
-
 
 .whatsap__estados{
     display: flex;
@@ -395,11 +395,12 @@ body{
     color: white;
     width: 50px;
     height: 50px;
+    font-size: 22px;
     border-radius: 50%;
     position: absolute;
     align-items: center;
-    padding-left:15px ;
-    bottom: 30px;
+    justify-content: center;
+    bottom: 50px;
     left: 710px;
 }
 
@@ -409,11 +410,12 @@ body{
     color: black;
     width: 40px;
     height: 40px;
+    font-size: 15px;
     border-radius: 50%;
     position: absolute;
     align-items: center;
-    padding-left:15px ;
-    bottom: 90px;
+    justify-content: center;
+    bottom: 110px;
     left: 715px;
 }
 
@@ -423,11 +425,12 @@ body{
     color: white;
     width: 50px;
     height: 50px;
+    font-size: 22px;
     border-radius: 50%;
     position: absolute;
     align-items: center;
-    padding-left:15px ;
-    bottom: 30px;
+    justify-content: center;
+    bottom: 50px;
     left: 1100px;
 }
 
