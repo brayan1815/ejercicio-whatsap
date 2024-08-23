@@ -7,14 +7,18 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #007f6a;
+}
 :root{
     --verde__whatsap:#007f6a;
     --verde__claro:#badcd5;
 }
 .whatsap{
+    position: relative;
     border: solid 1px;
     display: flex;
-    width: 400px;
+    width: 390px;
     margin: 40px auto;
     height: 90vh;
     background-color: aquamarine;
@@ -22,6 +26,7 @@
     /* padding: 20px; */
     flex-direction:column;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
     
 }
 .whatsap__nombre{
@@ -78,6 +83,11 @@
     border-bottom: solid 3px var(--verde__whatsap);
     color: var(--verde__claro);
 }
+
+#whatsap__iconodenum{
+    margin-left: 5px;
+}
+
 .whatsap__opciones:hover,
 #whatsap__opciones:hover{
     border-bottom:solid 3px var(--verde__claro) ;
@@ -88,8 +98,9 @@
 
 .whatsap__chats{
     display: flex;
-    width: 100%;
-    height: 650px;
+
+    width: 400px;
+    height: 95%;
     background-color: white;
     flex-direction: column;
     overflow-y: scroll;
@@ -140,14 +151,315 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     align-items: center;
     padding-left:15px ;
-    margin-top: 550px;
-    margin-left: 300px;
+    bottom: 30px;
+    right: 830px;
 }
 
 
+.whatsap__estados{
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    width: 400px;
+    height: 95%;
+    background-color:white;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.whatsap__pestañas{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 1200px;
+    height: 95%;
+    overflow-y: scroll;
+    /* overflow:hidden ; */
+}
+
+.whatsap__llamadas{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    width: 400px;
+    height: 95%;
+    background-color:white;
+    flex-direction: column;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.whatsap__añadirestado{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+}
+
+.whatsap__mifotoestado{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.whatsap__texmiestado{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 6%;
+    
+}
+
+.whatsap__texestadosnuev{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin: 2px 0px 2px 0px;
+    align-items: center;
+    padding-bottom: 6%;
+}
+
+.whatsap__estadonuevo{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+    margin: 2px 0px 2px 0px;
+}
+.whatsap__estadnuetex{
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 6%;
+    font-size: 14px;
+}
+
+.whatsap__fotoestadnue{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+    border: solid 3px green;
+    padding: 2px;
+}
+.whatsap__estadovisto{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+    margin: 2px 0px 2px 0px;
+}
+
+.whatsap__fotoestadvis{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+    border: solid 3px gray;
+    padding: 2px;
+}
+
+.whatsap__estadvistex{
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 6%;
+    font-size: 14px;
+}
+.whatsap__texestadosvis{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin: 2px 0px 2px 0px;
+    align-items: center;
+    padding-bottom: 6%;
+}
+.whatsap__mas{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 40px;
+    bottom: 10px; 
+    height: 20px;
+    width: 20px;
+    background-color:#007f6a;
+    color: white;
+    padding-bottom: 3%;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 1px white;
+}
 
 
+.whatsap__crearlinkllam{
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    background-color: white;
+    align-items: center;
+}
 
+#whatsap__inconolink{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    width: 55px;
+    background-color: #007f6a;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+
+.whatsap__textcreallamada{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 6%;
+}
+
+#whatsap__imgbianca{
+    display: flex;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.whatsap__llamadarecientetex{
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+.whatsap__texllam{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    padding-top: 2%;
+}
+
+.whatsap__llamadabianca{
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+#whatsap__flechallamsal{
+    height: 20px;
+    width: 20px;
+    color: red;
+}
+
+.whatsap__flechahora{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+
+#whatsap__icontelefono{
+    height: 30px;
+    width: 30px;
+    color: green;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+#whatsap__camaraestados{
+    display: flex;
+    background-color: var(--verde__whatsap);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    padding-left:15px ;
+    bottom: 30px;
+    left: 710px;
+}
+
+#whatsap__Lapizestados{
+    display: flex;
+    background-color: rgb(230, 223, 223);
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    padding-left:15px ;
+    bottom: 90px;
+    left: 715px;
+}
+
+#whatsap__nuevallam{
+    display: flex;
+    background-color: var(--verde__whatsap);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    padding-left:15px ;
+    bottom: 30px;
+    left: 1100px;
+}
+
+.whatsap__interfazchats{
+    display: none;
+}
+
+.whatsap__interfazestados{
+    display: none;
+}
+
+.whatsap__interfazllam{
+    display: none;
+}
+
+#whatsap__interfazchats:checked~.whatsap__contenedorpest {
+    left: 0px;
+    transition: all 1s;
+}
+#whatsap__interfazestados:checked~.whatsap__pestañas{
+    left: -390px;
+    transition: all 1s;
+}
+#whatsap__interfazllam:checked~.whatsap__pestañas{
+    left: -770px;
+    transition: all 1s;
+}
+
+/* .whatsap__contenedorpest{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 2200px;
+    height: 95%;
+} */
